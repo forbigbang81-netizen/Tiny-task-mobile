@@ -1,3 +1,4 @@
+app/src/main/java/com/tinytask/mobile/MacroService.kt
 class MacroService : AccessibilityService() {
     private val recordedEvents = mutableListOf<RecordedPoint>()
     private var isRecording = false
