@@ -1,4 +1,3 @@
-
 class MacroService : AccessibilityService() {
     private val recordedEvents = mutableListOf<RecordedPoint>()
     private var isRecording = false
@@ -28,5 +27,3 @@ class MacroService : AccessibilityService() {
 }
 
 data class RecordedPoint(val x: Int, val y: Int, val timestamp: Long)
-
- 
