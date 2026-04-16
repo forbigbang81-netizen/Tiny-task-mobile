@@ -1,0 +1,2 @@
+rootProject.name = "TinyTaskMobile"
+include ':app'
