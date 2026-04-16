@@ -27,3 +27,4 @@ class MacroService : AccessibilityService() {
 }
 
 data class RecordedPoint(val x: Int, val y: Int, val timestamp: Long)
+ 
