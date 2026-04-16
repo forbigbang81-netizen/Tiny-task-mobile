@@ -1,16 +1,3 @@
-name: Tiny-Task-Mobile
-
-on:
-  push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
-
-jobs:
-  build:
-    name: Build APK
-    runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
@@ -22,9 +9,8 @@ jobs:
           distribution: 'temurin'
           cache: gradle
 
- - name: Grant execute permission for gradlew
+      - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug
@@ -34,4 +20,3 @@ jobs:
         with:
           name: TinyTask-Mobile-Debug
           path: app/build/outputs/apk/debug/app-debug.apk
-          
